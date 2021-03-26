@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2623358715110979630}
   - component: {fileID: 2623358715110979631}
   - component: {fileID: 5907618696162356246}
+  - component: {fileID: 1668714343819485450}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Untagged
@@ -111,3 +112,16 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1668714343819485450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2623358715110979629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4827048435fc2074694de4ffb47e33af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _killedColor: {r: 0.9528302, g: 0, b: 0, a: 0}

@@ -11,4 +11,9 @@ public class BulletSphere : MonoBehaviour
         _rb = GetComponent<Rigidbody>();
         _rb.velocity = _velocity;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(this.gameObject);
+    }
 }
