@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1668714343819485450}
   m_Layer: 0
   m_Name: Obstacle
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -125,3 +125,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _killedColor: {r: 0.9528302, g: 0, b: 0, a: 0}
+  _explosionPS: {fileID: 19800002, guid: 3b1513bcb86426b4795879be6a128ed7, type: 3}
+  _explosionSound: {fileID: 8300000, guid: a438b5ca1ffd8ef43818ad9ebf2c496f, type: 3}

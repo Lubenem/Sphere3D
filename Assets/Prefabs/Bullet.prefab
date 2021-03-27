@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1566659481055265076}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 7967584346860671227}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6796068, y: 0.6796068, z: 0.6796068}
+  m_LocalScale: {x: 0.67, y: 0.67, z: 0.67}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -95,7 +95,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.7
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7967584346860671226
 MonoBehaviour:
@@ -109,7 +109,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fff75bf2eee3d0246ab7e75b8461d581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _velocity: {x: 0, y: 0, z: 10}
+  _velocity: {x: 0, y: 0, z: 5}
+  _scaleSpeed: 1
+  _minScale: {x: 0.12, y: 0.12, z: 0.12}
 --- !u!54 &1566659481055265076
 Rigidbody:
   m_ObjectHideFlags: 0
