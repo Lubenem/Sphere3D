@@ -5,6 +5,8 @@ public class PlayerSphere : MonoBehaviour
 {
     private BulletSphere _currBullet;
     private bool _isScaling;
+    private Vector3 _startScale;
+    private Vector3 _startPos;
 
     [SerializeField] private BulletSphere _bulletPrefab;
     [SerializeField] private Transform _bulletSpawnPos;
@@ -17,6 +19,16 @@ public class PlayerSphere : MonoBehaviour
     private void Start()
     {
         GameManager.instance.playerSphere = this;
+        _startScale = transform.localScale;
+        _startPos = transform.transform.position;
+    }
+
+    public void SetStartValues()
+    {
+        inputBlock = false;
+        transform.localScale = _startScale;
+        transform.position = _startPos;
+        UpdatePathScale();
     }
 
     private void Update()
